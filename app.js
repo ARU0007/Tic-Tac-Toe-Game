@@ -56,15 +56,32 @@ const showWinner = (winner) => {
 };
 
 const checkWinner = () => {
+  let draw = true;
   for (let pattern of winPattern) {
     let pos1val = boxes[pattern[0]].innerText;
     let pos2val = boxes[pattern[1]].innerText;
     let pos3val = boxes[pattern[2]].innerText;
 
-    if (pos1val != "" && pos2val != "" && pos3val != "") {
+    if (pos1val !== "" && pos2val !== "" && pos3val !== "") {
       if (pos1val === pos2val && pos2val === pos3val) {
         showWinner(pos1val);
+        draw = false;
+        break;
       }
+    }
+  }
+
+  if (draw) {
+    let isBoardFull = true;
+    for (let box of boxes) {
+      if (box.innerText === "") {
+        isBoardFull = false;
+        break;
+      }
+    }
+    if (isBoardFull) {
+      msg.innerText = "It's a draw!";
+      msgContainer.classList.remove("hide");
     }
   }
 };
