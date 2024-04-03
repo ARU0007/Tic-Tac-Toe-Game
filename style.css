@@ -35,6 +35,7 @@ body{
     box-shadow: 0 0 1rem rgba(0,0,0,0.5);
     font-size: 8vmin;
     color: #963d5a;
+    background-color: burlywood;
 }
 
 #reset-btn{
@@ -44,4 +45,22 @@ body{
     color: antiquewhite;
     border-radius: 0.5rem;
     border: none;
+}
+
+#new-btn{
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+#msg{
+    color: bisque;
+    font-size: 5vmin;
+}
+
+.hide{
+    display: none;
 }
