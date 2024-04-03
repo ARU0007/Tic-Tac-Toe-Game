@@ -4,7 +4,8 @@
 }
 
 body{
-    background-color: #07beb8;
+    background-color: #0094a5;
+    /* background-image: linear-gradient(blue ,green); */
     text-align: center;
     
 }
@@ -32,4 +33,15 @@ body{
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    font-size: 8vmin;
+    color: #963d5a;
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 0.5rem;
+    border: none;
 }
