@@ -1,8 +1,8 @@
 let boxes = document.querySelectorAll(".box");
-let resetBtn = document.querySelectorAll("#reset-btn");
-let newGameBtn = document.querySelectorAll("#new-btn");
-let msgContainer = document.querySelectorAll(".msg-container");
-let msg = document.querySelectorAll("#msg");
+let resetBtn = document.querySelector("#reset-btn");
+let newGameBtn = document.querySelector("#new-btn");
+let msgContainer = document.querySelector(".msg-container");
+let msg = document.querySelector("#msg");
 let turnO = true; //players turn
 
 const winPattern = [
