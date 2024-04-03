@@ -61,6 +61,11 @@ body{
     font-size: 5vmin;
 }
 
+.msg-container{
+    height: 30vmin;
+
+}
+
 .hide{
     display: none;
 }
